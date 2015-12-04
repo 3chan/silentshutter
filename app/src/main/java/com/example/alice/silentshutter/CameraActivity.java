@@ -113,8 +113,8 @@ public class CameraActivity extends Activity implements Camera.AutoFocusCallback
         public void onAutoFocus(boolean success, Camera camera) {
             inPregress_ = true; // 処理中フラグ
             camera.autoFocus(null);
-            //myCamera.takePicture(shutterListener_, null, pictureListener_);
-            myCamera.setPreviewCallback(previewCallback_);
+            myCamera.takePicture(shutterListener_, null, pictureListener_);
+            //myCamera.setPreviewCallback(previewCallback_);
         }
     };
 
